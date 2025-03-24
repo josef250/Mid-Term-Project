@@ -1,0 +1,37 @@
+services:
+  web:
+    build: ./config
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 80:80
+    networks:
+      - app-network
+
+  database:
+    image: mysql:latest
+    volumes:
+      - database:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=Ac2YtdW4fiAJ6pf
+      - MYSQL_DATABASE=mid_term_project
+      - MYSQL_USER=mdProject
+      - MYSQL_PASSWORD=alC4b2YenHPp015
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_HOST=database
+    networks:
+      - app-network
+
+volumes:
+  database:
+
+networks:
+  app-network:
