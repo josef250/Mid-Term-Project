@@ -2,6 +2,12 @@
 
 #Credentials
 
+
+#Server Login
+IP: 34.245.153.46
+username: root
+password: wsb@web25
+
 #Admin Demo 
 #username : admin
 #password : demo
