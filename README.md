@@ -25,3 +25,5 @@ password: wsb@web25
 # Install Docker : https://www.docker.com/products/docker-desktop/
 
 # pull image : docker pull josef250/mid-term-project-web
+
+#Live Demo: 34.245.153.46
