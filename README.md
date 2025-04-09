@@ -4,7 +4,7 @@
 
 
 #Server Login
-IP: 34.245.153.46
+IP: 3.213.1.177
 username: root
 password: wsb@web25
 
